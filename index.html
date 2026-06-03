@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KiroroAI — Asisten AI Cerdas Masa Kini</title>
+    <title>GrooveLab — Dance Workshop & Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
@@ -18,17 +18,20 @@
         }
 
         :root {
-            /* Light theme */
-            --bg-primary: #ffffff;
-            --bg-secondary: #f7f7f8;
-            --bg-tertiary: #ececf1;
-            --text-primary: #171717;
-            --text-secondary: #5f5f6b;
-            --text-tertiary: #9b9baf;
-            --accent: #10a37f;
-            --accent-hover: #0d8c6d;
-            --accent-glow: rgba(16, 163, 127, 0.2);
-            --border: #e5e5ea;
+            /* Light theme — energetic dance vibe */
+            --bg-primary: #fef9f7;
+            --bg-secondary: #fff0ed;
+            --bg-tertiary: #fce4dc;
+            --text-primary: #1a0f0c;
+            --text-secondary: #6b4d44;
+            --text-tertiary: #b08a7e;
+            --accent: #e83c6c;
+            --accent-hover: #d12a5a;
+            --accent-glow: rgba(232, 60, 108, 0.2);
+            --accent-secondary: #f59e0b;
+            --gradient-accent: linear-gradient(135deg, #e83c6c, #f59e0b);
+            --gradient-hero: linear-gradient(135deg, #fff0ed 0%, #fce4dc 40%, #fef3c7 100%);
+            --border: #f0d6ce;
             --card-bg: #ffffff;
             --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
             --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.06);
@@ -38,34 +41,35 @@
             --radius-md: 12px;
             --radius-lg: 16px;
             --radius-xl: 24px;
-            --gradient-hero: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 50%, #fdf2f8 100%);
-            --gradient-accent: linear-gradient(135deg, #10a37f, #0ea5e9);
-            --nav-blur: rgba(255, 255, 255, 0.72);
-            --toggle-bg: #e5e5ea;
-            --code-bg: #f0f0f5;
+            --nav-blur: rgba(254, 249, 247, 0.78);
+            --toggle-bg: #f0d6ce;
+            --code-bg: #fce4dc;
+            --tag-bg: #fff0ed;
         }
 
         [data-theme="dark"] {
-            --bg-primary: #0a0a0f;
-            --bg-secondary: #12121a;
-            --bg-tertiary: #1c1c2e;
-            --text-primary: #ededef;
-            --text-secondary: #9d9db5;
-            --text-tertiary: #6b6b85;
-            --accent: #34d399;
-            --accent-hover: #6ee7b7;
-            --accent-glow: rgba(52, 211, 153, 0.15);
-            --border: #2a2a3a;
-            --card-bg: #14141e;
-            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
-            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.3);
-            --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.35);
-            --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.4);
-            --gradient-hero: linear-gradient(135deg, #0a1a14 0%, #0a1628 50%, #1a0f1a 100%);
-            --gradient-accent: linear-gradient(135deg, #34d399, #38bdf8);
-            --nav-blur: rgba(10, 10, 15, 0.78);
-            --toggle-bg: #2a2a3a;
-            --code-bg: #1c1c2e;
+            --bg-primary: #0f0806;
+            --bg-secondary: #1a0f0c;
+            --bg-tertiary: #2a1812;
+            --text-primary: #f5edeb;
+            --text-secondary: #c4a69c;
+            --text-tertiary: #8a6b60;
+            --accent: #ff6b8a;
+            --accent-hover: #ff8fa8;
+            --accent-glow: rgba(255, 107, 138, 0.2);
+            --accent-secondary: #fbbf24;
+            --gradient-accent: linear-gradient(135deg, #ff6b8a, #fbbf24);
+            --gradient-hero: linear-gradient(135deg, #0f0806 0%, #1a0f0c 40%, #1a1208 100%);
+            --border: #2a1a14;
+            --card-bg: #1a0f0c;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.45);
+            --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.5);
+            --nav-blur: rgba(15, 8, 6, 0.82);
+            --toggle-bg: #2a1a14;
+            --code-bg: #2a1812;
+            --tag-bg: #1a0f0c;
         }
 
         html {
@@ -117,7 +121,7 @@
             right: 0;
             z-index: 1000;
             padding: 0 24px;
-            height: 64px;
+            height: 68px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -132,26 +136,26 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
-            letter-spacing: -0.3px;
+            letter-spacing: -0.5px;
         }
 
         .logo-icon {
-            width: 34px;
-            height: 34px;
+            width: 38px;
+            height: 38px;
             background: var(--gradient-accent);
-            border-radius: 10px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 16px;
+            font-size: 20px;
             color: #fff;
             transition: transform 0.3s ease;
         }
 
         .logo:hover .logo-icon {
-            transform: rotate(-8deg) scale(1.05);
+            transform: rotate(-12deg) scale(1.08);
         }
 
         nav {
@@ -246,22 +250,23 @@
             transform: rotate(0deg) scale(1);
         }
 
-        .btn-login {
-            background: var(--accent);
+        .btn-register {
+            background: var(--gradient-accent);
             color: #fff !important;
             padding: 8px 20px !important;
             border-radius: 10px !important;
             font-weight: 600;
             font-size: 14px;
-            transition: background 0.2s, transform 0.2s !important;
+            transition: opacity 0.2s, transform 0.2s !important;
         }
 
-        .btn-login:hover {
-            background: var(--accent-hover) !important;
-            transform: translateY(-1px);
+        .btn-register:hover {
+            opacity: 0.9 !important;
+            transform: translateY(-1px) !important;
+            background: var(--gradient-accent) !important;
         }
 
-        .btn-login::after {
+        .btn-register::after {
             display: none !important;
         }
 
@@ -308,7 +313,7 @@
         .mobile-menu {
             display: none;
             position: fixed;
-            top: 64px;
+            top: 68px;
             left: 0;
             right: 0;
             bottom: 0;
@@ -339,9 +344,10 @@
             color: var(--text-primary);
         }
 
-        .mobile-menu .btn-login {
+        .mobile-menu .btn-register {
             text-align: center;
             margin-top: 12px;
+            color: #fff !important;
         }
 
         @keyframes slideDown {
@@ -372,7 +378,7 @@
             transition: background 0.6s ease;
         }
 
-        /* Animated background shapes */
+        /* Animated background shapes — dance circles */
         .hero-bg-shapes {
             position: absolute;
             inset: 0;
@@ -384,34 +390,34 @@
         .hero-bg-shapes .shape {
             position: absolute;
             border-radius: 50%;
-            opacity: 0.2;
-            filter: blur(60px);
-            animation: floatShape 20s ease-in-out infinite;
+            opacity: 0.15;
+            filter: blur(80px);
+            animation: floatShape 25s ease-in-out infinite;
         }
 
         .hero-bg-shapes .shape:nth-child(1) {
-            width: 500px;
-            height: 500px;
-            background: var(--accent);
-            top: -10%;
-            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: #e83c6c;
+            top: -15%;
+            left: -15%;
             animation-delay: 0s;
         }
         .hero-bg-shapes .shape:nth-child(2) {
-            width: 400px;
-            height: 400px;
-            background: #0ea5e9;
-            bottom: -15%;
+            width: 450px;
+            height: 450px;
+            background: #f59e0b;
+            bottom: -20%;
             right: -10%;
-            animation-delay: -7s;
+            animation-delay: -8s;
         }
         .hero-bg-shapes .shape:nth-child(3) {
-            width: 300px;
-            height: 300px;
-            background: #a78bfa;
-            top: 50%;
-            left: 60%;
-            animation-delay: -14s;
+            width: 350px;
+            height: 350px;
+            background: #8b5cf6;
+            top: 40%;
+            left: 55%;
+            animation-delay: -16s;
         }
 
         @keyframes floatShape {
@@ -420,13 +426,13 @@
                 transform: translate(0, 0) scale(1);
             }
             25% {
-                transform: translate(30px, -40px) scale(1.05);
+                transform: translate(40px, -50px) scale(1.06);
             }
             50% {
-                transform: translate(-20px, 20px) scale(0.95);
+                transform: translate(-25px, 30px) scale(0.94);
             }
             75% {
-                transform: translate(15px, -20px) scale(1.02);
+                transform: translate(20px, -25px) scale(1.03);
             }
         }
 
@@ -440,7 +446,7 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: var(--bg-secondary);
+            background: var(--tag-bg);
             border: 1px solid var(--border);
             padding: 6px 16px 6px 10px;
             border-radius: 50px;
@@ -453,8 +459,8 @@
         }
 
         .badge-dot {
-            width: 7px;
-            height: 7px;
+            width: 8px;
+            height: 8px;
             background: var(--accent);
             border-radius: 50%;
             animation: pulse 2s ease-in-out infinite;
@@ -467,13 +473,13 @@
                 transform: scale(1);
             }
             50% {
-                opacity: 0.4;
-                transform: scale(0.8);
+                opacity: 0.3;
+                transform: scale(0.7);
             }
         }
 
         .hero h1 {
-            font-size: clamp(36px, 7vw, 64px);
+            font-size: clamp(38px, 7vw, 68px);
             font-weight: 700;
             letter-spacing: -2px;
             line-height: 1.1;
@@ -510,7 +516,7 @@
         .hero-subtitle {
             font-size: clamp(16px, 2.2vw, 19px);
             color: var(--text-secondary);
-            max-width: 560px;
+            max-width: 580px;
             margin: 16px auto 36px;
             line-height: 1.7;
         }
@@ -615,7 +621,7 @@
             font-size: 13px;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1.2px;
+            letter-spacing: 1.5px;
             color: var(--text-tertiary);
             margin-bottom: 8px;
             text-align: center;
@@ -639,19 +645,19 @@
         }
 
         /* ==========================================================
-               FEATURES
+               CLASSES / FEATURES
             ========================================================== */
-        #features {
+        #classes {
             padding-top: 100px;
         }
 
-        .features-grid {
+        .classes-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
 
-        .feature-card {
+        .class-card {
             background: var(--card-bg);
             border: 1px solid var(--border);
             border-radius: var(--radius-lg);
@@ -663,46 +669,214 @@
             overflow: hidden;
         }
 
-        .feature-card::before {
+        .class-card::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 3px;
+            height: 4px;
             background: var(--gradient-accent);
             transform: scaleX(0);
             transform-origin: left;
             transition: transform 0.4s ease;
         }
 
-        .feature-card:hover::before {
+        .class-card:hover::before {
             transform: scaleX(1);
         }
 
-        .feature-card:hover {
+        .class-card:hover {
             border-color: var(--accent);
             box-shadow: var(--shadow-lg);
             transform: translateY(-4px);
         }
 
-        .feature-card-icon {
-            font-size: 28px;
+        .class-card-icon {
+            font-size: 32px;
             margin-bottom: 16px;
             display: block;
         }
 
-        .feature-card h3 {
+        .class-card .class-level {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--accent);
+            background: var(--tag-bg);
+            padding: 2px 10px;
+            border-radius: 50px;
+            margin-bottom: 10px;
+        }
+
+        .class-card h3 {
             font-size: 17px;
             font-weight: 600;
             margin-bottom: 8px;
             letter-spacing: -0.3px;
         }
 
-        .feature-card p {
+        .class-card p {
             font-size: 14px;
             color: var(--text-secondary);
             line-height: 1.6;
+        }
+
+        .class-card .class-meta {
+            display: flex;
+            gap: 16px;
+            margin-top: 14px;
+            font-size: 13px;
+            color: var(--text-tertiary);
+        }
+
+        .class-card .class-meta span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* ============================================================
+               SCHEDULE TIMELINE
+            ============================================================ */
+        #schedule {
+            padding: 60px 24px;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .schedule-day {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            transition: border-color 0.3s;
+        }
+
+        .schedule-day:hover {
+            border-color: var(--accent);
+        }
+
+        .schedule-day .day-name {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .schedule-day .day-name .day-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .schedule-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+        }
+
+        .schedule-item:last-child {
+            border-bottom: none;
+        }
+
+        .schedule-item .time {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .schedule-item .dance-class {
+            color: var(--text-secondary);
+            flex: 1;
+            margin-left: 12px;
+        }
+
+        .schedule-item .instructor {
+            font-size: 13px;
+            color: var(--text-tertiary);
+        }
+
+        /* ==========================================================
+               INSTRUCTORS
+            ========================================================== */
+        #instructors {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .instructors-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .instructor-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .instructor-card:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+
+        .instructor-card .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--gradient-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            margin: 0 auto 16px;
+        }
+
+        .instructor-card h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .instructor-card .role {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .instructor-card .specialty {
+            display: inline-flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .instructor-card .specialty span {
+            font-size: 12px;
+            background: var(--tag-bg);
+            padding: 2px 10px;
+            border-radius: 50px;
+            color: var(--text-secondary);
         }
 
         /* ==========================================================
@@ -738,15 +912,6 @@
             font-size: 14px;
             color: var(--text-secondary);
             margin-top: 4px;
-        }
-
-        .stat-item .stat-plus {
-            font-size: 28px;
-            font-weight: 700;
-            background: var(--gradient-accent);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
         /* ==========================================================
@@ -786,7 +951,7 @@
         }
 
         .testimonial-card .stars {
-            color: #f59e0b;
+            color: var(--accent-secondary);
             font-size: 14px;
             letter-spacing: 2px;
             margin-bottom: 12px;
@@ -880,6 +1045,120 @@
         }
 
         /* ==========================================================
+               PRICING
+            ========================================================== */
+        #pricing {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .pricing-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 32px 28px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 1px var(--accent), var(--shadow-lg);
+            transform: scale(1.03);
+        }
+
+        .pricing-card.featured .pricing-badge {
+            display: inline-block;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.03) translateY(-4px);
+        }
+
+        .pricing-badge {
+            display: none;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: var(--gradient-accent);
+            color: #fff;
+            padding: 4px 14px;
+            border-radius: 50px;
+            margin-bottom: 16px;
+        }
+
+        .pricing-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .pricing-card .pricing-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .pricing-card .price {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: -2px;
+            margin-bottom: 4px;
+        }
+
+        .pricing-card .price span {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--text-tertiary);
+        }
+
+        .pricing-card .pricing-period {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-bottom: 24px;
+        }
+
+        .pricing-card .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 28px;
+        }
+
+        .pricing-card .pricing-features li {
+            padding: 6px 0;
+            font-size: 14px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pricing-card .pricing-features li::before {
+            content: '✓';
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .pricing-card .btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* ==========================================================
                FAQ
             ========================================================== */
         #faq {
@@ -933,7 +1212,7 @@
         }
 
         .faq-question .faq-icon {
-            font-size: 18px;
+            font-size: 20px;
             transition: transform 0.3s ease;
             flex-shrink: 0;
             color: var(--text-tertiary);
@@ -1180,6 +1459,12 @@
         .stagger-children.visible > *:nth-child(6) {
             transition-delay: 0.40s;
         }
+        .stagger-children.visible > *:nth-child(7) {
+            transition-delay: 0.48s;
+        }
+        .stagger-children.visible > *:nth-child(8) {
+            transition-delay: 0.56s;
+        }
 
         .stagger-children.visible > * {
             opacity: 1;
@@ -1189,9 +1474,32 @@
         /* ==========================================================
                RESPONSIVE
             ========================================================== */
+        @media (max-width: 1024px) {
+            .schedule-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 900px) {
-            .features-grid {
+            .classes-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .instructors-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+            .pricing-card.featured:hover {
+                transform: translateY(-4px);
             }
 
             .stats-grid {
@@ -1207,14 +1515,19 @@
         @media (max-width: 768px) {
             header {
                 padding: 0 16px;
+                height: 64px;
             }
 
-            nav a:not(.btn-login) {
+            nav a:not(.btn-register) {
                 display: none;
             }
 
             .hamburger {
                 display: flex;
+            }
+
+            .mobile-menu {
+                top: 64px;
             }
 
             .hero {
@@ -1240,11 +1553,21 @@
             .cta-box {
                 padding: 36px 20px;
             }
+
+            .schedule-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 600px) {
-            .features-grid {
+            .classes-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .instructors-grid {
+                grid-template-columns: 1fr;
+                max-width: 300px;
+                margin: 0 auto;
             }
 
             .stats-grid {
@@ -1292,21 +1615,22 @@
     <!-- ======= HEADER ======= -->
     <header>
         <div class="logo">
-            <div class="logo-icon">✦</div>
-            <span>KiroroAI</span>
+            <div class="logo-icon">💃</div>
+            <span>GrooveLab</span>
         </div>
 
         <nav>
-            <a href="#features">Fitur</a>
-            <a href="#testimonials">Testimoni</a>
+            <a href="#classes">Kelas</a>
+            <a href="#schedule">Jadwal</a>
+            <a href="#instructors">Instruktur</a>
+            <a href="#pricing">Harga</a>
             <a href="#faq">FAQ</a>
-            <a href="#cta">Hubungi</a>
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                     <span class="icon-sun">☀️</span>
                     <span class="icon-moon">🌙</span>
                 </button>
-                <a href="#" class="btn-login">Masuk</a>
+                <a href="#" class="btn-register">Daftar Sekarang</a>
             </div>
         </nav>
 
@@ -1317,11 +1641,12 @@
         </button>
 
         <div class="mobile-menu" id="mobileMenu">
-            <a href="#features">Fitur</a>
-            <a href="#testimonials">Testimoni</a>
+            <a href="#classes">Kelas</a>
+            <a href="#schedule">Jadwal</a>
+            <a href="#instructors">Instruktur</a>
+            <a href="#pricing">Harga</a>
             <a href="#faq">FAQ</a>
-            <a href="#cta">Hubungi</a>
-            <a href="#" class="btn-login">Masuk</a>
+            <a href="#" class="btn-register">Daftar Sekarang</a>
         </div>
     </header>
 
@@ -1336,86 +1661,336 @@
         <div class="hero-content">
             <div class="badge reveal">
                 <span class="badge-dot"></span>
-                Sekarang tersedia GPT-5 · 2x lebih cepat
+                Free trial class · 8 studio di Indonesia
             </div>
 
             <h1 class="reveal" style="transition-delay:0.1s">
-                Asisten AI yang <br>
-                <span class="gradient-text" id="typingText"></span>
+                Temukan <span class="gradient-text" id="typingText"></span>
                 <span class="typing-cursor"></span>
+                <br>di dalam dirimu
             </h1>
 
             <p class="hero-subtitle reveal" style="transition-delay:0.2s">
-                KiroroAI membantu Anda menulis, menganalisis data, membuat kode,
-                brainstorming ide, dan menyelesaikan pekerjaan lebih cepat dari sebelumnya.
+                GrooveLab adalah dance workshop & studio terdepan di Indonesia.
+                Dari hip-hop hingga contemporary, kami membantu ribuan orang
+                mengekspresikan diri lewat gerakan.
             </p>
 
             <div class="cta-group reveal" style="transition-delay:0.3s">
                 <button class="btn btn-accent">
-                    Mulai gratis
+                    Coba kelas gratis
                     <span>→</span>
                 </button>
                 <button class="btn btn-secondary">
                     <span>▶</span>
-                    Lihat demo
+                    Lihat studio
                 </button>
             </div>
 
             <div class="hero-stats reveal" style="transition-delay:0.4s">
                 <div class="hero-stat">
-                    <div class="number">2M+</div>
-                    <div class="label">Pengguna aktif</div>
+                    <div class="number">12K+</div>
+                    <div class="label">Murid aktif</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="number">150+</div>
-                    <div class="label">Negara</div>
+                    <div class="number">50+</div>
+                    <div class="label">Kelas per minggu</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="number">99.9%</div>
-                    <div class="label">Uptime</div>
+                    <div class="number">⭐ 4.9</div>
+                    <div class="label">Rating Google</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ======= FEATURES ======= -->
-    <section id="features">
-        <p class="section-label reveal">Fitur Unggulan</p>
-        <h2 class="section-title reveal" style="transition-delay:0.1s">Kenapa ribuan tim memilih KiroroAI?</h2>
+    <!-- ======= CLASSES ======= -->
+    <section id="classes">
+        <p class="section-label reveal">Program Kelas</p>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">Temukan gaya yang cocok untukmu</h2>
         <p class="section-desc reveal" style="transition-delay:0.15s">
-            Platform AI all-in-one yang dirancang untuk meningkatkan produktivitas tim Anda.
+            Dari pemula hingga profesional, kami punya kelas yang sesuai dengan level dan minatmu.
         </p>
 
-        <div class="features-grid stagger-children reveal" style="transition-delay:0.2s">
-            <div class="feature-card">
-                <span class="feature-card-icon">💬</span>
-                <h3>Percakapan natural</h3>
-                <p>Obrolan yang mengalir seperti dengan manusia. Pahami konteks dan ingat preferensi Anda.</p>
+        <div class="classes-grid stagger-children reveal" style="transition-delay:0.2s">
+            <div class="class-card">
+                <span class="class-card-icon">🕺</span>
+                <span class="class-level">Semua Level</span>
+                <h3>Hip-Hop</h3>
+                <p>Gerakan energik dengan beat yang catchy. Kelas hip-hop terpopuler kami dengan koreografi modern.</p>
+                <div class="class-meta">
+                    <span>⏱ 60 min</span>
+                    <span>🔥 12/20 tersisa</span>
+                </div>
             </div>
-            <div class="feature-card">
-                <span class="feature-card-icon">📎</span>
-                <h3>Upload & analisis file</h3>
-                <p>Unggah PDF, gambar, spreadsheet. AI akan membaca, meringkas, dan menganalisisnya.</p>
+            <div class="class-card">
+                <span class="class-card-icon">💃</span>
+                <span class="class-level">Pemula</span>
+                <h3>Contemporary</h3>
+                <p>Ekspresikan emosi lewat gerakan yang mengalir dan penuh makna. Cocok untuk pemula hingga mahir.</p>
+                <div class="class-meta">
+                    <span>⏱ 75 min</span>
+                    <span>🔥 8/15 tersisa</span>
+                </div>
             </div>
-            <div class="feature-card">
-                <span class="feature-card-icon">🎨</span>
-                <h3>Generate gambar</h3>
-                <p>Deskripsikan ide Anda dan lihat menjadi visual dalam hitungan detik dengan DALL·E.</p>
+            <div class="class-card">
+                <span class="class-card-icon">⚡</span>
+                <span class="class-level">Intermediate</span>
+                <h3>K-Pop Cover</h3>
+                <p>Pelajari koreografi K-Pop terbaru dari grup favoritmu. Gerakan detail dan persis seperti video asli.</p>
+                <div class="class-meta">
+                    <span>⏱ 60 min</span>
+                    <span>🔥 5/20 tersisa</span>
+                </div>
             </div>
-            <div class="feature-card">
-                <span class="feature-card-icon">🌐</span>
-                <h3>Browsing real-time</h3>
-                <p>Akses informasi terbaru dari web. Selalu up-to-date dengan data terkini.</p>
+            <div class="class-card">
+                <span class="class-card-icon">🔥</span>
+                <span class="class-level">Advance</span>
+                <h3>Breaking (B-Boy)</h3>
+                <p>Gerakan akrobatik, footwork, dan freeze yang spektakuler. Untuk yang sudah berpengalaman.</p>
+                <div class="class-meta">
+                    <span>⏱ 90 min</span>
+                    <span>🔥 6/12 tersisa</span>
+                </div>
             </div>
-            <div class="feature-card">
-                <span class="feature-card-icon">🔌</span>
-                <h3>Integrasi API</h3>
-                <p>Sambungkan KiroroAI ke aplikasi Anda dengan API simpel dan dokumentasi lengkap.</p>
+            <div class="class-card">
+                <span class="class-card-icon">🌊</span>
+                <span class="class-level">Semua Level</span>
+                <h3>Waacking & Vogue</h3>
+                <p>Gerakan lengan yang dramatis dan pose stylish. Kembali ke era disco dengan sentuhan modern.</p>
+                <div class="class-meta">
+                    <span>⏱ 60 min</span>
+                    <span>🔥 10/20 tersisa</span>
+                </div>
             </div>
-            <div class="feature-card">
-                <span class="feature-card-icon">🔒</span>
-                <h3>Keamanan enterprise</h3>
-                <p>Enkripsi end-to-end, SOC 2 compliant. Data Anda tetap privat dan aman.</p>
+            <div class="class-card">
+                <span class="class-card-icon">🎵</span>
+                <span class="class-level">Pemula</span>
+                <h3>Dance Fitness</h3>
+                <p>Bakar kalori sambil menari! Program kebugaran yang menyenangkan dengan musik upbeat.</p>
+                <div class="class-meta">
+                    <span>⏱ 45 min</span>
+                    <span>🔥 14/25 tersisa</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= SCHEDULE ======= -->
+    <section id="schedule">
+        <p class="section-label reveal">Jadwal Kelas</p>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">Pilih waktu yang pas</h2>
+        <p class="section-desc reveal" style="transition-delay:0.15s">
+            Kami buka 7 hari seminggu dengan jadwal pagi, siang, dan malam.
+        </p>
+
+        <div class="schedule-grid reveal" style="transition-delay:0.2s">
+            <div class="schedule-day">
+                <div class="day-name">
+                    <span class="day-dot"></span> Senin
+                </div>
+                <div class="schedule-item">
+                    <span class="time">07:00</span>
+                    <span class="dance-class">Dance Fitness</span>
+                    <span class="instructor">Rina</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">10:00</span>
+                    <span class="dance-class">Hip-Hop Dasar</span>
+                    <span class="instructor">Bobby</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">16:00</span>
+                    <span class="dance-class">K-Pop Cover</span>
+                    <span class="instructor">Suji</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">19:00</span>
+                    <span class="dance-class">Contemporary</span>
+                    <span class="instructor">Dinda</span>
+                </div>
+            </div>
+
+            <div class="schedule-day">
+                <div class="day-name">
+                    <span class="day-dot"></span> Selasa
+                </div>
+                <div class="schedule-item">
+                    <span class="time">07:00</span>
+                    <span class="dance-class">Dance Fitness</span>
+                    <span class="instructor">Rina</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">10:00</span>
+                    <span class="dance-class">Waacking & Vogue</span>
+                    <span class="instructor">Mira</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">16:00</span>
+                    <span class="dance-class">Breaking</span>
+                    <span class="instructor">Alex</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">19:00</span>
+                    <span class="dance-class">Hip-Hop Intermediate</span>
+                    <span class="instructor">Bobby</span>
+                </div>
+            </div>
+
+            <div class="schedule-day">
+                <div class="day-name">
+                    <span class="day-dot"></span> Rabu
+                </div>
+                <div class="schedule-item">
+                    <span class="time">07:00</span>
+                    <span class="dance-class">Dance Fitness</span>
+                    <span class="instructor">Rina</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">10:00</span>
+                    <span class="dance-class">Contemporary</span>
+                    <span class="instructor">Dinda</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">16:00</span>
+                    <span class="dance-class">K-Pop Cover</span>
+                    <span class="instructor">Suji</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">19:00</span>
+                    <span class="dance-class">Waacking & Vogue</span>
+                    <span class="instructor">Mira</span>
+                </div>
+            </div>
+
+            <div class="schedule-day">
+                <div class="day-name">
+                    <span class="day-dot"></span> Kamis
+                </div>
+                <div class="schedule-item">
+                    <span class="time">07:00</span>
+                    <span class="dance-class">Dance Fitness</span>
+                    <span class="instructor">Rina</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">10:00</span>
+                    <span class="dance-class">Hip-Hop Dasar</span>
+                    <span class="instructor">Bobby</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">16:00</span>
+                    <span class="dance-class">Breaking</span>
+                    <span class="instructor">Alex</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">19:00</span>
+                    <span class="dance-class">Contemporary</span>
+                    <span class="instructor">Dinda</span>
+                </div>
+            </div>
+
+            <div class="schedule-day">
+                <div class="day-name">
+                    <span class="day-dot"></span> Jumat
+                </div>
+                <div class="schedule-item">
+                    <span class="time">07:00</span>
+                    <span class="dance-class">Dance Fitness</span>
+                    <span class="instructor">Rina</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">10:00</span>
+                    <span class="dance-class">K-Pop Cover</span>
+                    <span class="instructor">Suji</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">16:00</span>
+                    <span class="dance-class">Hip-Hop Intermediate</span>
+                    <span class="instructor">Bobby</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">19:00</span>
+                    <span class="dance-class">Waacking & Vogue</span>
+                    <span class="instructor">Mira</span>
+                </div>
+            </div>
+
+            <div class="schedule-day">
+                <div class="day-name">
+                    <span class="day-dot"></span> Sabtu & Minggu
+                </div>
+                <div class="schedule-item">
+                    <span class="time">08:00</span>
+                    <span class="dance-class">Hip-Hop All Level</span>
+                    <span class="instructor">Bobby</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">10:00</span>
+                    <span class="dance-class">Contemporary Flow</span>
+                    <span class="instructor">Dinda</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">13:00</span>
+                    <span class="dance-class">K-Pop Spesial</span>
+                    <span class="instructor">Suji</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">15:00</span>
+                    <span class="dance-class">Open Dance Battle</span>
+                    <span class="instructor">Alex</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= INSTRUCTORS ======= -->
+    <section id="instructors">
+        <p class="section-label reveal">Instruktur Berpengalaman</p>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">Belajar dari yang terbaik</h2>
+        <p class="section-desc reveal" style="transition-delay:0.15s">
+            Setiap instruktur kami adalah dancer profesional dengan pengalaman nasional & internasional.
+        </p>
+
+        <div class="instructors-grid stagger-children reveal" style="transition-delay:0.2s">
+            <div class="instructor-card">
+                <div class="avatar">BB</div>
+                <h4>Bobby Bram</h4>
+                <div class="role">Hip-Hop Specialist</div>
+                <div class="specialty">
+                    <span>Breaking</span>
+                    <span>Popping</span>
+                    <span>Choreo</span>
+                </div>
+            </div>
+            <div class="instructor-card">
+                <div class="avatar">DI</div>
+                <h4>Dinda Indriani</h4>
+                <div class="role">Contemporary & Ballet</div>
+                <div class="specialty">
+                    <span>Contemporary</span>
+                    <span>Ballet</span>
+                    <span>Lyrical</span>
+                </div>
+            </div>
+            <div class="instructor-card">
+                <div class="avatar">SJ</div>
+                <h4>Suji Jung</h4>
+                <div class="role">K-Pop & Street Dance</div>
+                <div class="specialty">
+                    <span>K-Pop</span>
+                    <span>Street Jazz</span>
+                    <span>Girls Hip-Hop</span>
+                </div>
+            </div>
+            <div class="instructor-card">
+                <div class="avatar">AX</div>
+                <h4>Alex Xander</h4>
+                <div class="role">Breaking & Acro</div>
+                <div class="specialty">
+                    <span>B-Boy</span>
+                    <span>Acrobatics</span>
+                    <span>Freeze</span>
+                </div>
             </div>
         </div>
     </section>
@@ -1424,20 +1999,20 @@
     <section id="stats">
         <div class="stats-grid reveal-scale">
             <div class="stat-item">
-                <div class="stat-number" data-target="2500000">0</div>
-                <div class="stat-label">Pengguna Terdaftar</div>
+                <div class="stat-number" data-target="12500">0</div>
+                <div class="stat-label">Murid Bergabung</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="50000">0</div>
-                <div class="stat-label">Perusahaan Aktif</div>
+                <div class="stat-number" data-target="85">0</div>
+                <div class="stat-label">Instruktur Profesional</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="98000000">0</div>
-                <div class="stat-label">Pertanyaan Terjawab</div>
+                <div class="stat-number" data-target="2400">0</div>
+                <div class="stat-label">Kelas Terselenggara</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="192">0</div>
-                <div class="stat-label">Negara Tersedia</div>
+                <div class="stat-number" data-target="8">0</div>
+                <div class="stat-label">Studio di Indonesia</div>
             </div>
         </div>
     </section>
@@ -1445,76 +2020,76 @@
     <!-- ======= TESTIMONIALS ======= -->
     <section id="testimonials">
         <p class="section-label reveal">Testimoni</p>
-        <h2 class="section-title reveal" style="transition-delay:0.1s">Apa kata pengguna kami</h2>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">Apa kata murid kami</h2>
         <p class="section-desc reveal" style="transition-delay:0.15s">
-            Ribuan profesional dan tim sudah merasakan perbedaannya.
+            Dari yang pemula sampai yang sudah pro, semua merasa berkembang di GrooveLab.
         </p>
 
         <div class="testimonials-wrapper reveal" style="transition-delay:0.2s">
             <div class="testimonials-track" id="testimonialsTrack">
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <blockquote>"KiroroAI benar-benar mengubah cara tim kami bekerja. Riset yang dulu butuh berjam-jam sekarang selesai dalam hitungan menit."</blockquote>
+                    <blockquote>"GrooveLab benar-benar mengubah hidupku! Dulu aku pemalu, sekarang percaya diri tampil di atas panggung."</blockquote>
                     <div class="author">
-                        <div class="author-avatar">RN</div>
+                        <div class="author-avatar">AM</div>
                         <div class="author-info">
-                            <div class="name">Rina Novita</div>
-                            <div class="role">Product Manager, TechCorp</div>
+                            <div class="name">Ayu Maharani</div>
+                            <div class="role">Murid Hip-Hop, 6 bulan</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <blockquote>"Akurasi analisis datanya luar biasa. Sangat membantu tim data kami dalam membuat laporan mingguan dengan cepat."</blockquote>
+                    <blockquote>"Instrukturnya sabar banget! Aku yang kaku sekarang bisa ngikutin koreografi K-Pop dengan baik."</blockquote>
                     <div class="author">
-                        <div class="author-avatar">AD</div>
+                        <div class="author-avatar">RF</div>
                         <div class="author-info">
-                            <div class="name">Andi Pratama</div>
-                            <div class="role">Data Analyst, FinTech.id</div>
+                            <div class="name">Rafi Firmansyah</div>
+                            <div class="role">Murid K-Pop Cover</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <blockquote>"Sebagai developer, fitur coding dan debugging-nya sangat membantu. Sudah jadi daily driver saya!"</blockquote>
+                    <blockquote>"Studio-nya luas, AC-nya dingin, sound system-nya mantap! Betah banget latihan sampai berjam-jam."</blockquote>
                     <div class="author">
-                        <div class="author-avatar">SD</div>
+                        <div class="author-avatar">SN</div>
                         <div class="author-info">
-                            <div class="name">Siti Dewi</div>
-                            <div class="role">Full-stack Developer</div>
+                            <div class="name">Sari Notonegoro</div>
+                            <div class="role">Murid Contemporary</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★☆</div>
-                    <blockquote>"Integrasi API-nya sangat rapi. Kami bisa menghubungkan KiroroAI ke platform kami dalam waktu singkat."</blockquote>
+                    <blockquote>"Kelas Breaking-nya menantang banget! Kak Alex ngajarin step by step dengan sabar. Recommended!"</blockquote>
                     <div class="author">
-                        <div class="author-avatar">BH</div>
+                        <div class="author-avatar">DH</div>
                         <div class="author-info">
-                            <div class="name">Budi Hartono</div>
-                            <div class="role">CTO, StartupX</div>
+                            <div class="name">Dimas Hidayat</div>
+                            <div class="role">Murid Breaking, 3 bulan</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <blockquote>"Fitur generate gambar sangat kreatif! Saya pakai untuk membuat konsep visual campaign marketing."</blockquote>
+                    <blockquote>"Aku suka Dance Fitness-nya! Sambil olahraga seru, badan jadi lebih bugar dan gerakan dance-ku makin luwes."</blockquote>
                     <div class="author">
-                        <div class="author-avatar">MA</div>
+                        <div class="author-avatar">NL</div>
                         <div class="author-info">
-                            <div class="name">Maya Anggraini</div>
-                            <div class="role">Marketing Lead</div>
+                            <div class="name">Nadia Lestari</div>
+                            <div class="role">Murid Dance Fitness</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <blockquote>"Tim customer support kami jadi lebih efisien berkat KiroroAI. Response time turun drastis!"</blockquote>
+                    <blockquote>"Suasananya kekeluargaan banget. Semua orang supportif, gak ada yang nge-judge. Best dance studio ever!"</blockquote>
                     <div class="author">
-                        <div class="author-avatar">FR</div>
+                        <div class="author-avatar">PR</div>
                         <div class="author-info">
-                            <div class="name">Fajar Ramadhan</div>
-                            <div class="role">Customer Success Manager</div>
+                            <div class="name">Putra Ramadhan</div>
+                            <div class="role">Murid Waacking & Vogue</div>
                         </div>
                     </div>
                 </div>
@@ -1528,58 +2103,116 @@
         <div class="testimonial-dots" id="testimonialDots"></div>
     </section>
 
+    <!-- ======= PRICING ======= -->
+    <section id="pricing">
+        <p class="section-label reveal">Pilih Paket</p>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">Investasi untuk hobimu</h2>
+        <p class="section-desc reveal" style="transition-delay:0.15s">
+            Fleksibel, tanpa kontrak. Kamu bisa upgrade atau pause kapan saja.
+        </p>
+
+        <div class="pricing-grid stagger-children reveal" style="transition-delay:0.2s">
+            <div class="pricing-card">
+                <h3>Drop-In</h3>
+                <p class="pricing-desc">Coba dulu tanpa komitmen</p>
+                <div class="price">Rp85K <span>/sesi</span></div>
+                <p class="pricing-period">Bayar per kelas</p>
+                <ul class="pricing-features">
+                    <li>1 kelas pilihan</li>
+                    <li>Akses studio bebas</li>
+                    <li>Gratis minum</li>
+                    <li>Klub diskusi</li>
+                </ul>
+                <button class="btn btn-secondary">Pilih Paket</button>
+            </div>
+
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Terpopuler</div>
+                <h3>Monthly</h3>
+                <p class="pricing-desc">Untuk yang serius dance</p>
+                <div class="price">Rp499K <span>/bln</span></div>
+                <p class="pricing-period">≈ Rp17K per sesi</p>
+                <ul class="pricing-features">
+                    <li>Unlimited kelas</li>
+                    <li>Akses semua cabang</li>
+                    <li>Prioritas booking</li>
+                    <li>Gratis minum & towel</li>
+                    <li>Diskon merchandise 15%</li>
+                    <li>1 sesi private lesson</li>
+                </ul>
+                <button class="btn btn-accent">Pilih Paket</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Yearly</h3>
+                <p class="pricing-desc">Hemat untuk setahun penuh</p>
+                <div class="price">Rp4.2jt <span>/thn</span></div>
+                <p class="pricing-period">≈ Rp350K per bulan</p>
+                <ul class="pricing-features">
+                    <li>Semua benefit Monthly</li>
+                    <li>Hemat 30%</li>
+                    <li>4 private lessons</li>
+                    <li>Merchandise starter pack</li>
+                    <li>Invite event eksklusif</li>
+                    <li>Free workshop workshop</li>
+                </ul>
+                <button class="btn btn-secondary">Pilih Paket</button>
+            </div>
+        </div>
+    </section>
+
     <!-- ======= FAQ ======= -->
     <section id="faq">
         <p class="section-label reveal">FAQ</p>
-        <h2 class="section-title reveal" style="transition-delay:0.1s">Pertanyaan yang sering diajukan</h2>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">Pertanyaan umum</h2>
         <p class="section-desc reveal" style="transition-delay:0.15s">
-            Tidak menemukan jawaban? Hubungi tim support kami.
+            Masih ragu? Hubungi kami via WhatsApp atau datang langsung ke studio terdekat.
         </p>
 
         <div class="faq-list reveal" style="transition-delay:0.2s">
             <div class="faq-item">
                 <button class="faq-question">
-                    Apa itu KiroroAI?
+                    Apakah saya perlu pengalaman menari sebelumnya?
                     <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>KiroroAI adalah platform asisten AI all-in-one yang membantu Anda menulis, membuat kode, menganalisis data, brainstorming, dan banyak lagi. Didukung oleh model GPT-5 terbaru untuk hasil yang akurat dan natural.</p>
+                    <p>Tidak sama sekali! 70% murid kami adalah pemula. Setiap kelas memiliki level pemula yang mengajarkan dari dasar — mulai dari pemanasan, gerakan dasar, hingga koreografi sederhana.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <button class="faq-question">
-                    Apakah ada versi gratis?
+                    Apa yang harus saya bawa ke kelas?
                     <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Ya! Kami menawarkan paket gratis dengan 50 permintaan per hari. Untuk kebutuhan lebih besar, kami punya paket Pro, Tim, dan Enterprise dengan fitur tambahan seperti prioritas akses, analisis file lebih besar, dan dukungan prioritas.</p>
+                    <p>Bawa pakaian yang nyaman untuk bergerak (leggings, kaos, celana training) dan sepatu bersih dengan sol rata. Kami menyediakan air minum gratis, handuk, dan loker untuk menyimpan barang.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <button class="faq-question">
-                    Bagaimana dengan keamanan data saya?
+                    Bagaimana sistem pembatalan kelas?
                     <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Keamanan adalah prioritas utama kami. Semua data dienkripsi end-to-end, kami bersertifikasi SOC 2, dan data Anda tidak pernah digunakan untuk melatih model tanpa izin eksplisit. Kami juga menawarkan opsi on-premise untuk Enterprise.</p>
+                    <p>Kamu dapat membatalkan atau menjadwal ulang kelas hingga 2 jam sebelum sesi dimulai tanpa dikenakan biaya. Pembatalan di bawah 2 jam akan tetap terhitung sebagai sesi terpakai.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <button class="faq-question">
-                    Bahasa apa saja yang didukung?
+                    Apakah ada kelas untuk anak-anak?
                     <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>KiroroAI mendukung lebih dari 95 bahasa, termasuk Bahasa Indonesia, Inggris, Mandarin, Arab, Jepang, Korea, dan banyak lagi. Kualitas output tetap tinggi untuk semua bahasa utama.</p>
+                    <p>Ya! Kami memiliki program Kids Dance untuk usia 5-12 tahun dengan fokus pada koordinasi, kreativitas, dan kepercayaan diri. Tersedia di semua cabang setiap akhir pekan.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <button class="faq-question">
-                    Bisakah integrasi dengan aplikasi saya?
+                    Bisa booking studio untuk latihan pribadi?
                     <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Tentu! Kami menyediakan REST API yang lengkap dengan dokumentasi detail, SDK untuk Python, JavaScript, dan Go, serta integrasi langsung dengan Slack, Discord, Google Workspace, dan Microsoft Teams.</p>
+                    <p>Tentu! Studio kami bisa disewa per jam untuk latihan pribadi, grup kecil, atau rekaman. Harga mulai Rp100K/jam untuk member dan Rp150K/jam untuk non-member. Tersedia sistem audio, cermin full-wall, dan lighting.</p>
                 </div>
             </div>
         </div>
@@ -1588,11 +2221,11 @@
     <!-- ======= CTA ======= -->
     <section id="cta">
         <div class="cta-box reveal-scale">
-            <h2>Siap tingkatkan produktivitas tim Anda?</h2>
-            <p>Daftar gratis sekarang dan nikmati 100 permintaan pertama tanpa biaya. Tidak perlu kartu kredit.</p>
+            <h2>Siap untuk bergerak?</h2>
+            <p>Daftar sekarang dan dapatkan 1 kelas gratis percobaan. Tanpa komitmen, tanpa risiko.</p>
             <form class="newsletter-form" id="newsletterForm">
-                <input type="email" placeholder="Masukkan email Anda" required id="emailInput">
-                <button type="submit" class="btn btn-accent">Mulai gratis</button>
+                <input type="email" placeholder="Masukkan email kamu" required id="emailInput">
+                <button type="submit" class="btn btn-accent">Dapatkan kelas gratis</button>
             </form>
             <div class="form-status" id="formStatus"></div>
         </div>
@@ -1603,12 +2236,12 @@
         <div class="footer-links">
             <a href="#">Tentang</a>
             <a href="#">Blog</a>
-            <a href="#">Privasi</a>
-            <a href="#">Ketentuan</a>
+            <a href="#">Studio</a>
             <a href="#">Karier</a>
+            <a href="#">Kebijakan Privasi</a>
             <a href="#">Kontak</a>
         </div>
-        &copy; 2025 KiroroAI. All rights reserved.
+        &copy; 2025 GrooveLab Dance Workshop. All rights reserved. 💃
     </footer>
 
     <!-- ======= BACK TO TOP ======= -->
@@ -1622,12 +2255,11 @@
             'use strict';
 
             // ============================================
-            // 1. THEME TOGGLE (Dark / Light)
+            // 1. THEME TOGGLE
             // ============================================
             const themeToggle = document.getElementById('themeToggle');
             const html = document.documentElement;
 
-            // Load saved theme or system preference
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme) {
                 html.setAttribute('data-theme', savedTheme);
@@ -1654,7 +2286,6 @@
                 mobileMenu.classList.toggle('open');
             });
 
-            // Close mobile menu on link click
             mobileMenu.querySelectorAll('a').forEach(function(link) {
                 link.addEventListener('click', function() {
                     hamburger.classList.remove('active');
@@ -1672,7 +2303,7 @@
                     const target = document.querySelector(targetId);
                     if (target) {
                         e.preventDefault();
-                        const offset = 70; // header height
+                        const offset = 72;
                         const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
                         window.scrollTo({ top: top, behavior: 'smooth' });
                     }
@@ -1683,7 +2314,7 @@
             // 4. TYPEWRITER EFFECT
             // ============================================
             const typingEl = document.getElementById('typingText');
-            const words = ['memahami Anda', 'mengerti konteks', 'meningkatkan produktivitas', 'mengubah ide jadi aksi'];
+            const words = ['ritme', 'gaya', 'kepercayaan diri', 'komunitas', 'kekuatan'];
             let wordIndex = 0;
             let charIndex = 0;
             let isDeleting = false;
@@ -1692,18 +2323,15 @@
             function typeEffect() {
                 const currentWord = words[wordIndex];
                 if (!isDeleting) {
-                    // Typing forward
                     typingEl.textContent = currentWord.substring(0, charIndex + 1);
                     charIndex++;
                     if (charIndex === currentWord.length) {
-                        // Pause before deleting
                         isDeleting = true;
-                        typeTimeout = setTimeout(typeEffect, 2000);
+                        typeTimeout = setTimeout(typeEffect, 2200);
                         return;
                     }
                     typeTimeout = setTimeout(typeEffect, 60 + Math.random() * 40);
                 } else {
-                    // Deleting backward
                     typingEl.textContent = currentWord.substring(0, charIndex - 1);
                     charIndex--;
                     if (charIndex === 0) {
@@ -1732,8 +2360,6 @@
                 entries.forEach(function(entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        // Optionally unobserve after reveal
-                        // observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
@@ -1754,13 +2380,12 @@
 
                 statNumbers.forEach(function(el) {
                     const target = parseInt(el.getAttribute('data-target'), 10);
-                    const duration = 2000; // ms
+                    const duration = 2000;
                     const startTime = performance.now();
 
                     function updateCounter(currentTime) {
                         const elapsed = currentTime - startTime;
                         const progress = Math.min(elapsed / duration, 1);
-                        // Ease out cubic
                         const eased = 1 - Math.pow(1 - progress, 3);
                         const current = Math.floor(eased * target);
                         el.textContent = current.toLocaleString('id-ID');
@@ -1775,7 +2400,6 @@
                 });
             }
 
-            // Observe stats section to start counter
             const statsSection = document.getElementById('stats');
             const statsObserver = new IntersectionObserver(function(entries) {
                 entries.forEach(function(entry) {
@@ -1820,11 +2444,9 @@
                 const cardWidth = getSlideWidth();
                 const maxSlide = Math.max(0, cards.length - slidesPerView);
 
-                // Clamp currentSlide
                 if (currentSlide > maxSlide) currentSlide = maxSlide;
                 if (currentSlide < 0) currentSlide = 0;
 
-                // Set card widths
                 cards.forEach(function(card) {
                     card.style.minWidth = cardWidth + 'px';
                 });
@@ -1832,7 +2454,6 @@
                 const offset = currentSlide * (cardWidth + 20);
                 track.style.transform = 'translateX(-' + offset + 'px)';
 
-                // Update dots
                 updateDots();
             }
 
@@ -1856,7 +2477,7 @@
                 if (currentSlide < maxSlide) {
                     currentSlide++;
                 } else {
-                    currentSlide = 0; // loop
+                    currentSlide = 0;
                 }
                 updateCarousel();
             }
@@ -1866,7 +2487,7 @@
                 if (currentSlide > 0) {
                     currentSlide--;
                 } else {
-                    currentSlide = maxSlide; // loop
+                    currentSlide = maxSlide;
                 }
                 updateCarousel();
             }
@@ -1877,7 +2498,6 @@
             }
 
             if (track && cards.length > 0) {
-                // Initialize
                 updateCarousel();
 
                 prevBtn.addEventListener('click', function() {
@@ -1889,10 +2509,8 @@
                     resetAutoPlay();
                 });
 
-                // Auto-play
                 autoPlayInterval = setInterval(nextSlide, 4500);
 
-                // Handle resize
                 let resizeTimer;
                 window.addEventListener('resize', function() {
                     clearTimeout(resizeTimer);
@@ -1909,13 +2527,9 @@
                 const question = item.querySelector('.faq-question');
                 question.addEventListener('click', function() {
                     const isOpen = item.classList.contains('open');
-
-                    // Close all others
                     faqItems.forEach(function(other) {
                         other.classList.remove('open');
                     });
-
-                    // Toggle current
                     if (!isOpen) {
                         item.classList.add('open');
                     }
@@ -1934,7 +2548,7 @@
                     const email = document.getElementById('emailInput').value.trim();
 
                     if (!email) {
-                        formStatus.textContent = 'Silakan masukkan email Anda.';
+                        formStatus.textContent = 'Silakan masukkan email kamu.';
                         formStatus.className = 'form-status error';
                         return;
                     }
@@ -1945,12 +2559,10 @@
                         return;
                     }
 
-                    // Simulate success
-                    formStatus.textContent = '🎉 Pendaftaran berhasil! Cek email Anda untuk konfirmasi.';
+                    formStatus.textContent = '🎉 Selamat! Cek email kamu untuk detail kelas gratis.';
                     formStatus.className = 'form-status success';
                     newsletterForm.reset();
 
-                    // Clear status after 5s
                     setTimeout(function() {
                         formStatus.textContent = '';
                         formStatus.className = 'form-status';
@@ -1959,7 +2571,7 @@
             }
 
             // ============================================
-            // 10. BACK TO TOP BUTTON
+            // 10. BACK TO TOP
             // ============================================
             const backToTop = document.getElementById('backToTop');
 
@@ -1976,10 +2588,9 @@
             });
 
             // ============================================
-            // 11. PARALLAX EFFECT ON HERO SHAPES (optional)
+            // 11. PARALLAX ON HERO SHAPES
             // ============================================
             const shapes = document.querySelectorAll('.hero-bg-shapes .shape');
-            let isMouseDown = false;
 
             document.querySelector('.hero')?.addEventListener('mousemove', function(e) {
                 const x = (e.clientX / window.innerWidth - 0.5) * 2;
@@ -1991,9 +2602,9 @@
                 });
             });
 
-            console.log('%c KiroroAI %c Landing page loaded ✨ ',
-                'background:#10a37f;color:#fff;padding:4px 8px;border-radius:4px 0 0 4px;font-weight:bold',
-                'background:#171717;color:#fff;padding:4px 8px;border-radius:0 4px 4px 0;'
+            console.log('%c GrooveLab %c Dance Workshop — loaded ✨💃 ',
+                'background:#e83c6c;color:#fff;padding:4px 8px;border-radius:4px 0 0 4px;font-weight:bold',
+                'background:#f59e0b;color:#fff;padding:4px 8px;border-radius:0 4px 4px 0;'
             );
 
         })();
