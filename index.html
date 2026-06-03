@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrooveLab — Dance Workshop & Studio</title>
+    <meta name="description" content="GrooveLab adalah dance workshop & studio terdepan di Indonesia. Ikuti kelas hip-hop, contemporary, K-Pop, dan breaking dari instruktur profesional. Coba gratis!">
+    <meta property="og:title" content="GrooveLab — Dance Workshop & Studio">
+    <meta property="og:description" content="Temukan passion menarimu di GrooveLab. Kelas dance untuk semua level, dari hip-hop hingga contemporary.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://groovelab.id">
+    <meta property="og:image" content="https://groovelab.id/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GrooveLab — Dance Workshop & Studio">
+    <meta name="twitter:description" content="Temukan passion menarimu di GrooveLab. Kelas dance untuk semua level.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💃</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
@@ -1441,31 +1451,6 @@
             transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
-        .stagger-children.visible > *:nth-child(1) {
-            transition-delay: 0s;
-        }
-        .stagger-children.visible > *:nth-child(2) {
-            transition-delay: 0.08s;
-        }
-        .stagger-children.visible > *:nth-child(3) {
-            transition-delay: 0.16s;
-        }
-        .stagger-children.visible > *:nth-child(4) {
-            transition-delay: 0.24s;
-        }
-        .stagger-children.visible > *:nth-child(5) {
-            transition-delay: 0.32s;
-        }
-        .stagger-children.visible > *:nth-child(6) {
-            transition-delay: 0.40s;
-        }
-        .stagger-children.visible > *:nth-child(7) {
-            transition-delay: 0.48s;
-        }
-        .stagger-children.visible > *:nth-child(8) {
-            transition-delay: 0.56s;
-        }
-
         .stagger-children.visible > * {
             opacity: 1;
             transform: translateY(0);
@@ -1553,10 +1538,6 @@
             .cta-box {
                 padding: 36px 20px;
             }
-
-            .schedule-grid {
-                grid-template-columns: 1fr;
-            }
         }
 
         @media (max-width: 600px) {
@@ -1630,7 +1611,7 @@
                     <span class="icon-sun">☀️</span>
                     <span class="icon-moon">🌙</span>
                 </button>
-                <a href="#" class="btn-register">Daftar Sekarang</a>
+                <a href="#pricing" class="btn-register">Daftar Sekarang</a>
             </div>
         </nav>
 
@@ -1646,7 +1627,7 @@
             <a href="#instructors">Instruktur</a>
             <a href="#pricing">Harga</a>
             <a href="#faq">FAQ</a>
-            <a href="#" class="btn-register">Daftar Sekarang</a>
+            <a href="#pricing" class="btn-register">Daftar Sekarang</a>
         </div>
     </header>
 
@@ -1677,11 +1658,11 @@
             </p>
 
             <div class="cta-group reveal" style="transition-delay:0.3s">
-                <button class="btn btn-accent">
+                <button class="btn btn-accent" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">
                     Coba kelas gratis
                     <span>→</span>
                 </button>
-                <button class="btn btn-secondary">
+                <button class="btn btn-secondary" onclick="document.getElementById('instructors').scrollIntoView({behavior:'smooth'})">
                     <span>▶</span>
                     Lihat studio
                 </button>
@@ -1987,9 +1968,9 @@
                 <h4>Alex Xander</h4>
                 <div class="role">Breaking & Acro</div>
                 <div class="specialty">
-                    <span>B-Boy</span>
-                    <span>Acrobatics</span>
-                    <span>Freeze</span>
+                    <span>Breaking</span>
+                    <span>Acro</span>
+                    <span>Power Move</span>
                 </div>
             </div>
         </div>
@@ -1997,164 +1978,151 @@
 
     <!-- ======= STATS ======= -->
     <section id="stats">
-        <div class="stats-grid reveal-scale">
+        <div class="stats-grid reveal">
             <div class="stat-item">
-                <div class="stat-number" data-target="12500">0</div>
-                <div class="stat-label">Murid Bergabung</div>
+                <div class="stat-number">12K+</div>
+                <div class="stat-label">Murid Aktif</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="85">0</div>
-                <div class="stat-label">Instruktur Profesional</div>
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Kelas per Minggu</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="2400">0</div>
-                <div class="stat-label">Kelas Terselenggara</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-target="8">0</div>
+                <div class="stat-number">8</div>
                 <div class="stat-label">Studio di Indonesia</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4.9</div>
+                <div class="stat-label">Rating Google ⭐</div>
             </div>
         </div>
     </section>
 
     <!-- ======= TESTIMONIALS ======= -->
     <section id="testimonials">
-        <p class="section-label reveal">Testimoni</p>
-        <h2 class="section-title reveal" style="transition-delay:0.1s">Apa kata murid kami</h2>
+        <p class="section-label reveal">Testimonial</p>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">Apa kata mereka</h2>
         <p class="section-desc reveal" style="transition-delay:0.15s">
-            Dari yang pemula sampai yang sudah pro, semua merasa berkembang di GrooveLab.
+            Ribuan murid telah merasakan perubahan positif setelah bergabung dengan GrooveLab.
         </p>
 
         <div class="testimonials-wrapper reveal" style="transition-delay:0.2s">
             <div class="testimonials-track" id="testimonialsTrack">
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <blockquote>"GrooveLab benar-benar mengubah hidupku! Dulu aku pemalu, sekarang percaya diri tampil di atas panggung."</blockquote>
+                    <blockquote>"GrooveLab benar-benar mengubah hidupku. Dulu aku malu menari, sekarang aku percaya diri tampil di panggung!"</blockquote>
                     <div class="author">
-                        <div class="author-avatar">AM</div>
+                        <div class="author-avatar">SA</div>
                         <div class="author-info">
-                            <div class="name">Ayu Maharani</div>
+                            <div class="name">Sari Amalia</div>
                             <div class="role">Murid Hip-Hop, 6 bulan</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <blockquote>"Instrukturnya sabar banget! Aku yang kaku sekarang bisa ngikutin koreografi K-Pop dengan baik."</blockquote>
+                    <blockquote>"Instrukturnya sabar banget dan profesional. Suasananya seru, setiap kelas bikin nagih!"</blockquote>
                     <div class="author">
-                        <div class="author-avatar">RF</div>
+                        <div class="author-avatar">RD</div>
                         <div class="author-info">
-                            <div class="name">Rafi Firmansyah</div>
-                            <div class="role">Murid K-Pop Cover</div>
+                            <div class="name">Rangga Dwi</div>
+                            <div class="role">Murid Breaking, 1 tahun</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <blockquote>"Studio-nya luas, AC-nya dingin, sound system-nya mantap! Betah banget latihan sampai berjam-jam."</blockquote>
+                    <blockquote>"Kelas K-Pop-nya paling seru! Koreografinya update terus sesuai comeback terbaru. Recommended banget!"</blockquote>
                     <div class="author">
-                        <div class="author-avatar">SN</div>
+                        <div class="author-avatar">MP</div>
                         <div class="author-info">
-                            <div class="name">Sari Notonegoro</div>
-                            <div class="role">Murid Contemporary</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★☆</div>
-                    <blockquote>"Kelas Breaking-nya menantang banget! Kak Alex ngajarin step by step dengan sabar. Recommended!"</blockquote>
-                    <div class="author">
-                        <div class="author-avatar">DH</div>
-                        <div class="author-info">
-                            <div class="name">Dimas Hidayat</div>
-                            <div class="role">Murid Breaking, 3 bulan</div>
+                            <div class="name">Maya Putri</div>
+                            <div class="role">Murid K-Pop, 3 bulan</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <blockquote>"Aku suka Dance Fitness-nya! Sambil olahraga seru, badan jadi lebih bugar dan gerakan dance-ku makin luwes."</blockquote>
+                    <blockquote>"Studio-nya bersih, AC-nya dingin, dan musiknya mantap. Tempat terbaik buat belajar dance di Jakarta."</blockquote>
                     <div class="author">
-                        <div class="author-avatar">NL</div>
+                        <div class="author-avatar">AF</div>
                         <div class="author-info">
-                            <div class="name">Nadia Lestari</div>
-                            <div class="role">Murid Dance Fitness</div>
+                            <div class="name">Andi Firmansyah</div>
+                            <div class="role">Murid Contemporary, 8 bulan</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <blockquote>"Suasananya kekeluargaan banget. Semua orang supportif, gak ada yang nge-judge. Best dance studio ever!"</blockquote>
+                    <blockquote>"Awalnya cuma ikut free trial, sekarang udah 1 tahun langganan. Dance Fitness-nya bikin badan jadi lebih bugar!"</blockquote>
                     <div class="author">
-                        <div class="author-avatar">PR</div>
+                        <div class="author-avatar">DN</div>
                         <div class="author-info">
-                            <div class="name">Putra Ramadhan</div>
-                            <div class="role">Murid Waacking & Vogue</div>
+                            <div class="name">Dewi Nuraini</div>
+                            <div class="role">Murid Dance Fitness, 1 tahun</div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="testimonial-controls">
+                <button id="testPrev" aria-label="Previous">←</button>
+                <button id="testNext" aria-label="Next">→</button>
+            </div>
+            <div class="testimonial-dots" id="testimonialDots"></div>
         </div>
-
-        <div class="testimonial-controls">
-            <button id="prevTestimonial" aria-label="Previous">←</button>
-            <button id="nextTestimonial" aria-label="Next">→</button>
-        </div>
-        <div class="testimonial-dots" id="testimonialDots"></div>
     </section>
 
     <!-- ======= PRICING ======= -->
     <section id="pricing">
         <p class="section-label reveal">Pilih Paket</p>
-        <h2 class="section-title reveal" style="transition-delay:0.1s">Investasi untuk hobimu</h2>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">Harga yang ramah di kantong</h2>
         <p class="section-desc reveal" style="transition-delay:0.15s">
-            Fleksibel, tanpa kontrak. Kamu bisa upgrade atau pause kapan saja.
+            Mulai dari Rp 150rb/bulan. Bisa cancel kapan saja, tanpa ribet.
         </p>
 
         <div class="pricing-grid stagger-children reveal" style="transition-delay:0.2s">
             <div class="pricing-card">
-                <h3>Drop-In</h3>
-                <p class="pricing-desc">Coba dulu tanpa komitmen</p>
-                <div class="price">Rp85K <span>/sesi</span></div>
-                <p class="pricing-period">Bayar per kelas</p>
+                <div class="pricing-badge">Best Value</div>
+                <h3>Basic</h3>
+                <p class="pricing-desc">Untuk yang baru mulai</p>
+                <div class="price">Rp 150<span>rb</span></div>
+                <div class="pricing-period">/bulan</div>
                 <ul class="pricing-features">
-                    <li>1 kelas pilihan</li>
-                    <li>Akses studio bebas</li>
-                    <li>Gratis minum</li>
-                    <li>Klub diskusi</li>
+                    <li>4 kelas per bulan</li>
+                    <li>Akses ke 1 studio</li>
+                    <li>Free trial class</li>
+                    <li>E-book gerakan dasar</li>
                 </ul>
                 <button class="btn btn-secondary">Pilih Paket</button>
             </div>
-
             <div class="pricing-card featured">
                 <div class="pricing-badge">Terpopuler</div>
-                <h3>Monthly</h3>
-                <p class="pricing-desc">Untuk yang serius dance</p>
-                <div class="price">Rp499K <span>/bln</span></div>
-                <p class="pricing-period">≈ Rp17K per sesi</p>
+                <h3>Pro</h3>
+                <p class="pricing-desc">Untuk yang serius</p>
+                <div class="price">Rp 350<span>rb</span></div>
+                <div class="pricing-period">/bulan</div>
                 <ul class="pricing-features">
-                    <li>Unlimited kelas</li>
-                    <li>Akses semua cabang</li>
+                    <li>12 kelas per bulan</li>
+                    <li>Akses ke semua studio</li>
+                    <li>1x private session</li>
                     <li>Prioritas booking</li>
-                    <li>Gratis minum & towel</li>
-                    <li>Diskon merchandise 15%</li>
-                    <li>1 sesi private lesson</li>
+                    <li>Merch exclusive</li>
                 </ul>
                 <button class="btn btn-accent">Pilih Paket</button>
             </div>
-
             <div class="pricing-card">
-                <h3>Yearly</h3>
-                <p class="pricing-desc">Hemat untuk setahun penuh</p>
-                <div class="price">Rp4.2jt <span>/thn</span></div>
-                <p class="pricing-period">≈ Rp350K per bulan</p>
+                <div class="pricing-badge">Best Value</div>
+                <h3>Unlimited</h3>
+                <p class="pricing-desc">Tanpa batas!</p>
+                <div class="price">Rp 550<span>rb</span></div>
+                <div class="pricing-period">/bulan</div>
                 <ul class="pricing-features">
-                    <li>Semua benefit Monthly</li>
-                    <li>Hemat 30%</li>
-                    <li>4 private lessons</li>
-                    <li>Merchandise starter pack</li>
-                    <li>Invite event eksklusif</li>
-                    <li>Free workshop workshop</li>
+                    <li>Kelas unlimited</li>
+                    <li>Akses ke semua studio</li>
+                    <li>4x private session</li>
+                    <li>Guest instructor access</li>
+                    <li>Merch + diskon event</li>
+                    <li>Free partner pass</li>
                 </ul>
                 <button class="btn btn-secondary">Pilih Paket</button>
             </div>
@@ -2166,7 +2134,7 @@
         <p class="section-label reveal">FAQ</p>
         <h2 class="section-title reveal" style="transition-delay:0.1s">Pertanyaan umum</h2>
         <p class="section-desc reveal" style="transition-delay:0.15s">
-            Masih ragu? Hubungi kami via WhatsApp atau datang langsung ke studio terdekat.
+            Masih ragu? Mungkin jawabannya ada di sini.
         </p>
 
         <div class="faq-list reveal" style="transition-delay:0.2s">
@@ -2176,16 +2144,16 @@
                     <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Tidak sama sekali! 70% murid kami adalah pemula. Setiap kelas memiliki level pemula yang mengajarkan dari dasar — mulai dari pemanasan, gerakan dasar, hingga koreografi sederhana.</p>
+                    <p>Tidak sama sekali! Kami punya kelas untuk pemula hingga profesional. Instruktur kami akan membimbingmu dari dasar.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <button class="faq-question">
-                    Apa yang harus saya bawa ke kelas?
+                    Apa saja yang perlu dibawa ke kelas?
                     <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Bawa pakaian yang nyaman untuk bergerak (leggings, kaos, celana training) dan sepatu bersih dengan sol rata. Kami menyediakan air minum gratis, handuk, dan loker untuk menyimpan barang.</p>
+                    <p>Cukup datang dengan pakaian yang nyaman untuk bergerak, sepatu bersih, dan botol minum. Kami menyediakan matras dan perlengkapan lainnya.</p>
                 </div>
             </div>
             <div class="faq-item">
@@ -2194,7 +2162,16 @@
                     <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Kamu dapat membatalkan atau menjadwal ulang kelas hingga 2 jam sebelum sesi dimulai tanpa dikenakan biaya. Pembatalan di bawah 2 jam akan tetap terhitung sebagai sesi terpakai.</p>
+                    <p>Kamu bisa membatalkan kelas hingga 2 jam sebelum jadwal tanpa dikenakan biaya. Pembatalan di bawah 2 jam akan terhitung sebagai satu sesi.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Apada ada free trial untuk kelas?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Ya! Kami menyediakan 1x free trial class untuk setiap murid baru. Kamu bisa mencoba kelas apa pun yang kamu minati.</p>
                 </div>
             </div>
             <div class="faq-item">
@@ -2203,29 +2180,20 @@
                     <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Ya! Kami memiliki program Kids Dance untuk usia 5-12 tahun dengan fokus pada koordinasi, kreativitas, dan kepercayaan diri. Tersedia di semua cabang setiap akhir pekan.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    Bisa booking studio untuk latihan pribadi?
-                    <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Tentu! Studio kami bisa disewa per jam untuk latihan pribadi, grup kecil, atau rekaman. Harga mulai Rp100K/jam untuk member dan Rp150K/jam untuk non-member. Tersedia sistem audio, cermin full-wall, dan lighting.</p>
+                    <p>Tentu! Kami memiliki program Kids Dance untuk usia 5-12 tahun. Kelas dirancang khusus dengan gerakan yang aman dan menyenangkan.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ======= CTA ======= -->
+    <!-- ======= CTA / NEWSLETTER ======= -->
     <section id="cta">
-        <div class="cta-box reveal-scale">
-            <h2>Siap untuk bergerak?</h2>
-            <p>Daftar sekarang dan dapatkan 1 kelas gratis percobaan. Tanpa komitmen, tanpa risiko.</p>
+        <div class="cta-box reveal">
+            <h2>Dapatkan update kelas terbaru</h2>
+            <p>Daftar newsletter dan dapatkan info promo, jadwal kelas baru, dan tips dance setiap minggu.</p>
             <form class="newsletter-form" id="newsletterForm">
-                <input type="email" placeholder="Masukkan email kamu" required id="emailInput">
-                <button type="submit" class="btn btn-accent">Dapatkan kelas gratis</button>
+                <input type="email" id="newsletterEmail" placeholder="Masukkan email kamu" required>
+                <button type="submit" class="btn btn-accent">Langganan</button>
             </form>
             <div class="form-status" id="formStatus"></div>
         </div>
@@ -2234,349 +2202,65 @@
     <!-- ======= FOOTER ======= -->
     <footer>
         <div class="footer-links">
-            <a href="#">Tentang</a>
-            <a href="#">Blog</a>
-            <a href="#">Studio</a>
-            <a href="#">Karier</a>
+            <a href="#classes">Kelas</a>
+            <a href="#schedule">Jadwal</a>
+            <a href="#instructors">Instruktur</a>
+            <a href="#pricing">Harga</a>
+            <a href="#faq">FAQ</a>
             <a href="#">Kebijakan Privasi</a>
-            <a href="#">Kontak</a>
+            <a href="#">Syarat & Ketentuan</a>
         </div>
-        &copy; 2025 GrooveLab Dance Workshop. All rights reserved. 💃
+        <p>&copy; 2026 GrooveLab. Dance like nobody's watching.</p>
     </footer>
 
     <!-- ======= BACK TO TOP ======= -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    <button class="back-to-top" id="backToTop" aria-label="Scroll to top">↑</button>
 
-    <!-- ==========================================================
-    JAVASCRIPT
-    ========================================================== -->
+    <!-- ======= JAVASCRIPT ======= -->
     <script>
         (function() {
             'use strict';
 
-            // ============================================
-            // 1. THEME TOGGLE
-            // ============================================
+            // --- Theme Toggle ---
             const themeToggle = document.getElementById('themeToggle');
-            const html = document.documentElement;
+            const storedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme) {
-                html.setAttribute('data-theme', savedTheme);
-            } else {
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                html.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+            if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+                document.documentElement.setAttribute('data-theme', 'dark');
             }
 
             themeToggle.addEventListener('click', function() {
-                const current = html.getAttribute('data-theme');
-                const next = current === 'dark' ? 'light' : 'dark';
-                html.setAttribute('data-theme', next);
-                localStorage.setItem('theme', next);
+                const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                const newTheme = isDark ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
             });
 
-            // ============================================
-            // 2. MOBILE HAMBURGER MENU
-            // ============================================
+            // --- Hamburger Menu ---
             const hamburger = document.getElementById('hamburger');
             const mobileMenu = document.getElementById('mobileMenu');
 
             hamburger.addEventListener('click', function() {
                 this.classList.toggle('active');
                 mobileMenu.classList.toggle('open');
+                document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
             });
 
+            // Close mobile menu on link click
             mobileMenu.querySelectorAll('a').forEach(function(link) {
                 link.addEventListener('click', function() {
                     hamburger.classList.remove('active');
                     mobileMenu.classList.remove('open');
+                    document.body.style.overflow = '';
                 });
             });
 
-            // ============================================
-            // 3. SMOOTH SCROLL FOR ANCHOR LINKS
-            // ============================================
-            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-                anchor.addEventListener('click', function(e) {
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    const target = document.querySelector(targetId);
-                    if (target) {
-                        e.preventDefault();
-                        const offset = 72;
-                        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-                        window.scrollTo({ top: top, behavior: 'smooth' });
-                    }
-                });
-            });
-
-            // ============================================
-            // 4. TYPEWRITER EFFECT
-            // ============================================
-            const typingEl = document.getElementById('typingText');
-            const words = ['ritme', 'gaya', 'kepercayaan diri', 'komunitas', 'kekuatan'];
-            let wordIndex = 0;
-            let charIndex = 0;
-            let isDeleting = false;
-            let typeTimeout;
-
-            function typeEffect() {
-                const currentWord = words[wordIndex];
-                if (!isDeleting) {
-                    typingEl.textContent = currentWord.substring(0, charIndex + 1);
-                    charIndex++;
-                    if (charIndex === currentWord.length) {
-                        isDeleting = true;
-                        typeTimeout = setTimeout(typeEffect, 2200);
-                        return;
-                    }
-                    typeTimeout = setTimeout(typeEffect, 60 + Math.random() * 40);
-                } else {
-                    typingEl.textContent = currentWord.substring(0, charIndex - 1);
-                    charIndex--;
-                    if (charIndex === 0) {
-                        isDeleting = false;
-                        wordIndex = (wordIndex + 1) % words.length;
-                        typeTimeout = setTimeout(typeEffect, 400);
-                        return;
-                    }
-                    typeTimeout = setTimeout(typeEffect, 30 + Math.random() * 20);
-                }
-            }
-
-            typeEffect();
-
-            // ============================================
-            // 5. SCROLL ANIMATIONS (Intersection Observer)
-            // ============================================
-            const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger-children');
-
-            const observerOptions = {
-                threshold: 0.15,
-                rootMargin: '0px 0px -40px 0px'
-            };
-
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, observerOptions);
-
-            revealElements.forEach(function(el) {
-                observer.observe(el);
-            });
-
-            // ============================================
-            // 6. COUNTER ANIMATION
-            // ============================================
-            const statNumbers = document.querySelectorAll('.stat-number');
-            let countersStarted = false;
-
-            function startCounters() {
-                if (countersStarted) return;
-                countersStarted = true;
-
-                statNumbers.forEach(function(el) {
-                    const target = parseInt(el.getAttribute('data-target'), 10);
-                    const duration = 2000;
-                    const startTime = performance.now();
-
-                    function updateCounter(currentTime) {
-                        const elapsed = currentTime - startTime;
-                        const progress = Math.min(elapsed / duration, 1);
-                        const eased = 1 - Math.pow(1 - progress, 3);
-                        const current = Math.floor(eased * target);
-                        el.textContent = current.toLocaleString('id-ID');
-                        if (progress < 1) {
-                            requestAnimationFrame(updateCounter);
-                        } else {
-                            el.textContent = target.toLocaleString('id-ID');
-                        }
-                    }
-
-                    requestAnimationFrame(updateCounter);
-                });
-            }
-
-            const statsSection = document.getElementById('stats');
-            const statsObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        startCounters();
-                        statsObserver.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.3 });
-
-            if (statsSection) {
-                statsObserver.observe(statsSection);
-            }
-
-            // ============================================
-            // 7. TESTIMONIAL CAROUSEL
-            // ============================================
-            const track = document.getElementById('testimonialsTrack');
-            const prevBtn = document.getElementById('prevTestimonial');
-            const nextBtn = document.getElementById('nextTestimonial');
-            const dotsContainer = document.getElementById('testimonialDots');
-            const cards = track ? track.querySelectorAll('.testimonial-card') : [];
-            let currentSlide = 0;
-            let slidesPerView = 3;
-            let autoPlayInterval;
-
-            function getSlidesPerView() {
-                if (window.innerWidth <= 768) return 1;
-                if (window.innerWidth <= 900) return 2;
-                return 3;
-            }
-
-            function getSlideWidth() {
-                const gap = 20;
-                const containerWidth = track.parentElement.offsetWidth;
-                const spv = getSlidesPerView();
-                return (containerWidth - gap * (spv - 1)) / spv;
-            }
-
-            function updateCarousel() {
-                slidesPerView = getSlidesPerView();
-                const cardWidth = getSlideWidth();
-                const maxSlide = Math.max(0, cards.length - slidesPerView);
-
-                if (currentSlide > maxSlide) currentSlide = maxSlide;
-                if (currentSlide < 0) currentSlide = 0;
-
-                cards.forEach(function(card) {
-                    card.style.minWidth = cardWidth + 'px';
-                });
-
-                const offset = currentSlide * (cardWidth + 20);
-                track.style.transform = 'translateX(-' + offset + 'px)';
-
-                updateDots();
-            }
-
-            function updateDots() {
-                const totalDots = Math.max(1, cards.length - slidesPerView + 1);
-                dotsContainer.innerHTML = '';
-                for (let i = 0; i < totalDots; i++) {
-                    const dot = document.createElement('span');
-                    if (i === currentSlide) dot.classList.add('active');
-                    dot.addEventListener('click', function() {
-                        currentSlide = i;
-                        updateCarousel();
-                        resetAutoPlay();
-                    });
-                    dotsContainer.appendChild(dot);
-                }
-            }
-
-            function nextSlide() {
-                const maxSlide = Math.max(0, cards.length - slidesPerView);
-                if (currentSlide < maxSlide) {
-                    currentSlide++;
-                } else {
-                    currentSlide = 0;
-                }
-                updateCarousel();
-            }
-
-            function prevSlide() {
-                const maxSlide = Math.max(0, cards.length - slidesPerView);
-                if (currentSlide > 0) {
-                    currentSlide--;
-                } else {
-                    currentSlide = maxSlide;
-                }
-                updateCarousel();
-            }
-
-            function resetAutoPlay() {
-                clearInterval(autoPlayInterval);
-                autoPlayInterval = setInterval(nextSlide, 4500);
-            }
-
-            if (track && cards.length > 0) {
-                updateCarousel();
-
-                prevBtn.addEventListener('click', function() {
-                    prevSlide();
-                    resetAutoPlay();
-                });
-                nextBtn.addEventListener('click', function() {
-                    nextSlide();
-                    resetAutoPlay();
-                });
-
-                autoPlayInterval = setInterval(nextSlide, 4500);
-
-                let resizeTimer;
-                window.addEventListener('resize', function() {
-                    clearTimeout(resizeTimer);
-                    resizeTimer = setTimeout(updateCarousel, 150);
-                });
-            }
-
-            // ============================================
-            // 8. FAQ ACCORDION
-            // ============================================
-            const faqItems = document.querySelectorAll('.faq-item');
-
-            faqItems.forEach(function(item) {
-                const question = item.querySelector('.faq-question');
-                question.addEventListener('click', function() {
-                    const isOpen = item.classList.contains('open');
-                    faqItems.forEach(function(other) {
-                        other.classList.remove('open');
-                    });
-                    if (!isOpen) {
-                        item.classList.add('open');
-                    }
-                });
-            });
-
-            // ============================================
-            // 9. NEWSLETTER FORM
-            // ============================================
-            const newsletterForm = document.getElementById('newsletterForm');
-            const formStatus = document.getElementById('formStatus');
-
-            if (newsletterForm) {
-                newsletterForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    const email = document.getElementById('emailInput').value.trim();
-
-                    if (!email) {
-                        formStatus.textContent = 'Silakan masukkan email kamu.';
-                        formStatus.className = 'form-status error';
-                        return;
-                    }
-
-                    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                        formStatus.textContent = 'Format email tidak valid.';
-                        formStatus.className = 'form-status error';
-                        return;
-                    }
-
-                    formStatus.textContent = '🎉 Selamat! Cek email kamu untuk detail kelas gratis.';
-                    formStatus.className = 'form-status success';
-                    newsletterForm.reset();
-
-                    setTimeout(function() {
-                        formStatus.textContent = '';
-                        formStatus.className = 'form-status';
-                    }, 5000);
-                });
-            }
-
-            // ============================================
-            // 10. BACK TO TOP
-            // ============================================
+            // --- Back to Top ---
             const backToTop = document.getElementById('backToTop');
 
             window.addEventListener('scroll', function() {
-                if (window.pageYOffset > 400) {
+                if (window.scrollY > 400) {
                     backToTop.classList.add('visible');
                 } else {
                     backToTop.classList.remove('visible');
@@ -2587,25 +2271,202 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
 
-            // ============================================
-            // 11. PARALLAX ON HERO SHAPES
-            // ============================================
-            const shapes = document.querySelectorAll('.hero-bg-shapes .shape');
+            // --- Typing Effect ---
+            const words = ['gerakanmu', 'passionmu', 'bakatmu', 'dirimu'];
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            const typingElement = document.getElementById('typingText');
 
-            document.querySelector('.hero')?.addEventListener('mousemove', function(e) {
-                const x = (e.clientX / window.innerWidth - 0.5) * 2;
-                const y = (e.clientY / window.innerHeight - 0.5) * 2;
-                shapes.forEach(function(shape, index) {
-                    const speed = 15 + index * 10;
-                    shape.style.transform = 'translate(' + (x * speed) + 'px, ' + (y * speed) +
-                        'px)';
+            function typeEffect() {
+                const currentWord = words[wordIndex];
+
+                if (isDeleting) {
+                    typingElement.textContent = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typingElement.textContent = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                if (!isDeleting && charIndex === currentWord.length) {
+                    isDeleting = true;
+                    setTimeout(typeEffect, 2000);
+                    return;
+                }
+
+                if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                    setTimeout(typeEffect, 500);
+                    return;
+                }
+
+                const speed = isDeleting ? 40 : 80;
+                setTimeout(typeEffect, speed);
+            }
+
+            typeEffect();
+
+            // --- Intersection Observer (Reveal Animations) ---
+            const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger-children');
+
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -40px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            revealElements.forEach(function(el) {
+                observer.observe(el);
+            });
+
+            // --- Dynamic stagger delay (supports unlimited children) ---
+            document.querySelectorAll('.stagger-children.visible').forEach(function(container) {
+                const children = container.children;
+                for (let i = 0; i < children.length; i++) {
+                    children[i].style.transitionDelay = (i * 0.08) + 's';
+                }
+            });
+
+            // Enhanced stagger: when stagger-children becomes visible, apply dynamic delays
+            const staggerObserver = new MutationObserver(function() {
+                document.querySelectorAll('.stagger-children.visible').forEach(function(container) {
+                    const children = container.children;
+                    for (let i = 0; i < children.length; i++) {
+                        children[i].style.transitionDelay = (i * 0.08) + 's';
+                    }
                 });
             });
 
-            console.log('%c GrooveLab %c Dance Workshop — loaded ✨💃 ',
-                'background:#e83c6c;color:#fff;padding:4px 8px;border-radius:4px 0 0 4px;font-weight:bold',
-                'background:#f59e0b;color:#fff;padding:4px 8px;border-radius:0 4px 4px 0;'
-            );
+            document.querySelectorAll('.stagger-children').forEach(function(el) {
+                staggerObserver.observe(el, { attributes: true, attributeFilter: ['class'] });
+            });
+
+            // --- Testimonials Carousel ---
+            const track = document.getElementById('testimonialsTrack');
+            const cards = track.querySelectorAll('.testimonial-card');
+            const dotsContainer = document.getElementById('testimonialDots');
+            const prevBtn = document.getElementById('testPrev');
+            const nextBtn = document.getElementById('testNext');
+
+            let currentIndex = 0;
+            let cardsPerView = 3;
+
+            function updateCardsPerView() {
+                if (window.innerWidth < 768) {
+                    cardsPerView = 1;
+                } else if (window.innerWidth < 900) {
+                    cardsPerView = 2;
+                } else {
+                    cardsPerView = 3;
+                }
+            }
+
+            function getMaxIndex() {
+                return Math.max(0, cards.length - cardsPerView);
+            }
+
+            function updateCarousel() {
+                updateCardsPerView();
+                const maxIndex = getMaxIndex();
+                if (currentIndex > maxIndex) currentIndex = maxIndex;
+                const cardWidth = cards[0].offsetWidth + 20; // gap
+                track.style.transform = 'translateX(-' + (currentIndex * cardWidth) + 'px)';
+                updateDots();
+            }
+
+            function updateDots() {
+                const totalDots = getMaxIndex() + 1;
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < totalDots; i++) {
+                    const dot = document.createElement('span');
+                    if (i === currentIndex) dot.classList.add('active');
+                    dot.addEventListener('click', function() {
+                        currentIndex = i;
+                        updateCarousel();
+                    });
+                    dotsContainer.appendChild(dot);
+                }
+            }
+
+            prevBtn.addEventListener('click', function() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateCarousel();
+                }
+            });
+
+            nextBtn.addEventListener('click', function() {
+                if (currentIndex < getMaxIndex()) {
+                    currentIndex++;
+                    updateCarousel();
+                }
+            });
+
+            window.addEventListener('resize', updateCarousel);
+            updateCarousel();
+
+            // --- FAQ Accordion ---
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(function(item) {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', function() {
+                    const isOpen = item.classList.contains('open');
+
+                    // Close all
+                    faqItems.forEach(function(other) {
+                        other.classList.remove('open');
+                    });
+
+                    // Toggle current
+                    if (!isOpen) {
+                        item.classList.add('open');
+                    }
+                });
+            });
+
+            // --- Newsletter Form ---
+            const newsletterForm = document.getElementById('newsletterForm');
+            const emailInput = document.getElementById('newsletterEmail');
+            const formStatus = document.getElementById('formStatus');
+
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = emailInput.value.trim();
+
+                if (!email) {
+                    formStatus.textContent = 'Silakan masukkan email kamu.';
+                    formStatus.className = 'form-status error';
+                    return;
+                }
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    formStatus.textContent = 'Format email tidak valid.';
+                    formStatus.className = 'form-status error';
+                    return;
+                }
+
+                // Simulate success
+                formStatus.textContent = 'Terima kasih! Kamu sudah terdaftar di newsletter kami.';
+                formStatus.className = 'form-status success';
+                emailInput.value = '';
+
+                setTimeout(function() {
+                    formStatus.textContent = '';
+                    formStatus.className = 'form-status';
+                }, 4000);
+            });
 
         })();
     </script>
